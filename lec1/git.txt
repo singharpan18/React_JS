@@ -1,0 +1,13 @@
+#push new repository from the command line
+create a repo without readme file
+git init
+git branch -M main
+git add .
+git commit -m "lec 1"
+git remote add origin https://github.com/singharpan18/React_JS.git
+git push -u origin main
+
+#push an existing repository from the command line
+git remote add origin https://github.com/singharpan18/React_JS.git
+git branch -M main
+git push -u origin main
