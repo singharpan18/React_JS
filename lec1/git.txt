@@ -11,3 +11,6 @@ git push -u origin main
 git remote add origin https://github.com/singharpan18/React_JS.git
 git branch -M main
 git push -u origin main
+
+React is known as because it reacts to changes in data and automatically updates the user interface accordingly.
+
