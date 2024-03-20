@@ -1,5 +1,6 @@
 Class
 See Bookmark
+See Copy
 See Code
 Go through pdf
 Practice assignment coding
