@@ -1,0 +1,15 @@
+1. Difference between Name , * and Default Export.
+
+Named exports are useful when you want to export multiple values from a module.
+Default exports are useful when you want to export a single value.
+Wildcard exports/imports are useful for importing multiple named exports under a single namespace.
+import * as moduleExports from './moduleFile';
+
+2. Importance of config.js file.
+config file is mainly used for storing hard-coded data which is to be used during development.
+
+3. What are Hooks?
+Copy
+
+4.Why do we need a useState Hook?
+Copy

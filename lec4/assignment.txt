@@ -1,0 +1,87 @@
+1. Is JSX mandatory for React?
+No JSX is not mandatory for React, we can use createElement API instead.
+But we are using JSX because it's saves our time , help us to write clean code and also code which can be easy to
+debug.
+
+2. Is ES6 mandatory for React?
+No it's also optional but we are using because many new features like Classes, Arrow Functions, 
+Variables(let, const) etc which help us in writing less and maintainable code. 
+
+3. {TitleComponent} vs {<TitleComponent/>} vs {<TitleComponent></TitleComponent>} in JSX
+{TitleComponent}: This value describes the TitleComponent as a javascript expression or a variable or 
+React element. 
+<TitleComponent/> : This value represents a Component that is basically returning Some JSX value.
+<TitleComponent></TitleComponent> : <TitleComponent /> and <TitleComponent></TitleComponent> are equivalent 
+only when < TitleComponent /> has no child components. The opening and closing tags are created to include the 
+child components.
+
+4. How can I write comments in JSX?
+JSX comments are written as follows:
+{/*  */} - for single or multiline comments
+
+5. What is <React.Fragment></React.Fragment> and <></> ?
+<React.Fragment></React.Fragment> is a feature in React that allows you to return multiple elements from a React 
+component by allowing you to group a list of children without adding extra nodes to the DOM. <></> is the 
+shorthand tag for React.Fragment. The only difference between them is that the shorthand version does not 
+support the key attribute.
+
+6. What is Virtual DOM?
+Virtual DOM is the representation or copy of original DOM.
+
+7. What is Reconciliation in React?
+Reconciliation is the process through which React updates the Browser DOM and makes React work faster. React use 
+a diffing algorithm so that component updates are predictable and faster. React would first calculate the 
+difference between the real DOM and the copy of DOM (Virtual DOM) when there's an update of components. React 
+stores a copy of Browser DOM which is called Virtual DOM. When we make changes or add data, React creates a new 
+Virtual DOM and compares it with the previous one. Comparison is done by Diffing Algorithm. React compares the 
+Virtual DOM with Real DOM. It finds out the changed nodes and updates only the changed nodes in Real DOM leaving 
+the rest nodes as it is. This process is called Reconciliation.
+
+8. What is React Fiber?
+React Fiber is a reimplementation of the React reconciliation algorithm, introduced in 
+React version 16. It is designed to improve the performance and responsiveness of React applications, 
+particularly in terms of rendering complex user interfaces and handling large datasets.It breaks down rendering 
+work into smaller units called fibers, allowing React to prioritize and schedule updates more effectively.
+One of the core features of React Fiber is its ability to pause and resume work. 
+This means that React can temporarily suspend rendering, handle higher-priority tasks and then return to 
+rendering without losing the application state.Fiber introduces a concept called "scheduling" which allows React 
+to prioritize different types of work.Unlike the previous reconciler in React, which was synchronous and blocked 
+the main thread during rendering, Fiber operates asynchronously. This means that rendering work can be 
+interleaved with other tasks, improving the overall responsiveness of the application.
+
+9. Why we need keys in React? When do we need keys in React?
+To make rendering faster.
+We need keys when we have elements of same type.
+
+10. Can we use index as keys in React?
+Copy
+
+11. What is props in React? Ways to
+props stands for properties which are basically parameters or arguments in a function.
+
+
+12. What is a Config Driven UI ?
+Copy
+
+13. Difference between Virtual DOM and Real DOM?
+DOM stands for Document Object Model, which represents your application UI and whenever the changes are made in 
+the application, this DOM gets updated and the user is able to visualize the changes. DOM is an interface that 
+allows scripts to update the content, style, and structure of the document.
+
+The Virtual DOM is a light-weight abstraction of the DOM. You can think of it as a copy of the DOM, that can be 
+updated without affecting the actual DOM. It has all the same properties as the real DOM object, but doesn’t 
+have the ability to write to the screen like the real DOM.
+
+The "real DOM" (Document Object Model) refers to the actual structure of HTML elements that exist in a web page. 
+When a web browser loads an HTML document, it parses the document and constructs a tree-like structure of nodes, 
+representing each HTML element and its attributes.
+
+
+
+
+
+
+
+ 
+
+
